@@ -8,17 +8,18 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
-app.post('/api/inscricao', (req, res) => {
-  console.log('Recebida uma solicitação POST para /api/inscricao');
-  console.log('Dados do formulário recebidos:', req.body);
-  console.log({req});
+// https://www.youtube.com/watch?v=dFrgIrWmTeY
+app.post('/api/signup', (req, res) => {
+  console.log('Received a POST request /api/signup');
+  console.log('Form data received:', req.body);
 
-  var nome = req.body.usuario;
+  // Learn difference between var, const, and let
+  const user = req.body.user;
 
-  res.json({ message: `Nome Cadastrado: ${nome}` });
+  res.json({ message: `Name stored: ${user}` });
 });
 
 
 app.listen(port, () => {
-  console.log(`Servidor Rodando em http://localhost:${port}`);
+  console.log(`Service running @ http://localhost:${port}`);
 });

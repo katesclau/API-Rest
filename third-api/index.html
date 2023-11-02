@@ -6,11 +6,12 @@
   <title>Terceira API</title>
 </head>
 <body>
-  <form action="/api/inscricao" method="post">
-    <label for="usuario">Usuario</label>
-    <input type="text" id="usuario" name="usuario">
-    <button type="submit">Enviar</button>
+  <form action="/api/signup" method="post">
+    <label for="user">Username</label>
+    <input type="text" id="user" name="user">
+    <button type="submit">Submit</button>
   </form>
 </body>
-<script src="server03.js"></script>
+<!-- No need to include BE code in the FE. This FE is HTML only, and uses an encoded POST Form to communicate with BE  -->
+<!-- <script src="server.js"></script> -->
 </html>
