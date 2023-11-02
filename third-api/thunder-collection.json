@@ -1,0 +1,38 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "API-REST",
+    "dateExported": "2023-11-02T21:43:58.251Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "61a147e3-194f-4a9c-bf4c-2ba44a71613d",
+            "colId": "01f82664-414a-4a61-9d59-3893014703cd",
+            "containerId": "",
+            "name": "POST Form",
+            "url": "http://localhost:3000/api/signup",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-02T21:39:49.696Z",
+            "modified": "2023-11-02T21:43:43.459Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "user",
+                        "value": "user"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
